@@ -65,28 +65,30 @@ def clean_text(abstract):
 
     """
     # Remove HTML tags
-    text = re.sub(r'<.*?>', '', abstract)
+    text = re.sub(r"<.*?>", "", abstract)
 
     # Remove -
-    text = re.sub(r'-', ' ', text)
+    text = re.sub(r"-", " ", text)
 
     # Remove punctuation
-    text = re.sub(r'[^\w\s]', '', text)
+    text = re.sub(r"[^\w\s]", "", text)
 
     # Convert to lowercase
     text = text.lower()
 
     # Remove numbers
-    text = re.sub(r'\d', '', text)
+    text = re.sub(r"\d", "", text)
 
     # Remove stop words
-    text = " ".join([word for word in text.split() if word not in stopwords.stopwords("en")])
+    text = " ".join(
+        [word for word in text.split() if word not in stopwords.stopwords("en")]
+    )
 
     # Remove extra whitespace
-    text = re.sub(r'\s+', ' ', text).strip()
+    text = re.sub(r"\s+", " ", text).strip()
 
-    text = re.sub(r'study', ' ', text)
-    text = re.sub(r'paper', ' ', text)
+    text = re.sub(r"study", " ", text)
+    text = re.sub(r"paper", " ", text)
 
     return text
 
@@ -151,7 +153,9 @@ if __name__ == "__main__":
 
     percent = split
     print("Splitting data into train and test sets...")
-    print(f"The train set contains {split * 100}% and the test set contains {100 - split * 100}% of the data")
+    print(
+        f"The train set contains {split * 100}% and the test set contains {100 - split * 100}% of the data"
+    )
 
     # Apply the train split to the original and generated abstracts
     ai_train = ai.sample(frac=percent, random_state=random_state)
@@ -172,7 +176,6 @@ if __name__ == "__main__":
     test = test.sample(frac=1).reset_index(drop=True)
     print(f"The train set shape is {train.shape}")
     print(f"The test set shape is {test.shape}")
-
 
     # Save the train and test sets as csv fil
     print("Saving train and test sets...")
