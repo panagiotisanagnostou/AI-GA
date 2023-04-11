@@ -11,10 +11,10 @@ The AI-GA dataset contains a total of *28662* samples, with each sample consisti
 The dataset is provided in a CSV format, with each row representing a single sample. The CSV file contains three columns: `abstract`, `title`, and `label`. The `abstract` column contains the text of the abstract, the `title` column contains the title of the corresponding abstract, and the `label` column contains the label indicating the type of the abstract.
 
 
-Data analsysis
---------------
+Usage Instructions
+------------------
 
-The `read_data.py` is a Python script designed to clean and split the AI-GA dataset. It takes the AI-GA dataset as input and performs cleaning operations such as removing special characters, converting text to lowercase, and removing stop words. It then splits the cleaned data into train and test sets for machine learning or natural language processing tasks.
+To use the AI-GA dataset, you can download the `ai-ga-dataset.csv` file and load it into your preferred programming environment or machine learning framework. The `read_data.py` is a Python script designed to clean and split the AI-GA dataset. It takes the AI-GA dataset as input and performs cleaning operations such as removing special characters, converting text to lowercase, and removing stop words. It then splits the cleaned data into train and test sets for machine learning or natural language processing tasks.
 
 The script supports the following command line arguments:
 
@@ -30,13 +30,13 @@ The default arguments of this script recreate the data as we used them in our ex
 
 To run the script, you can use the following command:
 
-```{sh}
+```bash
 python read_data.py [clean=True|False] [split=FLOAT] [random_state=INT]
 ```
 
 The dependencies for the script are listed in the requirements.txt file. You can install the dependencies using the following command:
 
-```{sh}
+```bash
 pip install -r requirements.txt
 ```
 
@@ -46,52 +46,46 @@ If you encounter any issues with the script, please create an issue in this repo
 
 1. Run the script with default settings (no cleaning, 80% train and 20% test, no specific random seed):
 
-```{sh}
+```bash
 python read_data.py
 ```
 
 2. Clean the text data and split into 75% train and 25% test sets:
 
-```{sh}
+```bash
 python read_data.py split=0.75
 ```
 
 3. Clean the text data, split into 80% train and 20% test sets, and set the random seed to 123:
 
 Command line execution:
-```{sh}
+```bash
 python read_data.py clean=True split=0.8 random_state=123
 ```
 
 Dataset License
 ---------------
 
-The AI-GA dataset is released under the [MIT license](https://github.com/panagiotisanagnostou/AI-GA). Please refer to the LICENSE file in this repository for more details.
-Repository Contents
+The AI-GA dataset is released under the [MIT license](https://github.com/panagiotisanagnostou/AI-GA/blob/main/LICENSE).
 
-This repository contains the following files:
-
-- `ai-ga-dataset.csv`: The main dataset file in CSV format, containing the AI-generated and original abstracts.
-- `README.md`: This README file providing information about the dataset and its usage.
-- `LICENSE`: The license file specifying the terms and conditions for using the AI-GA dataset.
-- `script.py`: The Python script used to generate the AI-generated abstracts for the dataset. Please refer to the script for details on the generation process.
-
-Usage Instructions
-------------------
-
-To use the AI-GA dataset, you can download the ai-ga-dataset.csv file and load it into your preferred programming environment or machine learning framework. You can then use the dataset for training and evaluating your machine learning models or for other research purposes.
-
-To generate additional AI-generated abstracts using the script provided in this repository, you can run the script.py script in your Python environment. Please note that you may need to install additional dependencies or modify the script to suit your specific use case.
-
-Citation
---------
-
-If you use the AI-GA dataset in your research or publications, please acknowledge its use by citing this repository [insert citation details].
 
 Contributions
 -------------
 
-Contributions to the AI-GA dataset are welcome! If you would like to contribute to this dataset by providing additional samples or improving the existing dataset, please create a pull request or contact the repository owner for more information.
+Contributions to the AI-GA dataset are welcome! If you would like to contribute to this dataset by providing additional samples or improving the existing dataset, please create an issue in this repository or contact the repository owner for more information.
+
+<!--
+Citation
+--------
+
+If you use the AI-GA dataset in your research or publications, please acknowledge its use by citing this repository.
+
+```bibtex
+
+```
+-->
+
 Contact Information
+-------------------
 
 For any questions, issues, or feedback regarding the AI-GA dataset or this repository, please contact [insert contact information].
