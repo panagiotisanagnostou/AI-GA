@@ -74,18 +74,23 @@ Contributions
 
 Contributions to the AI-GA dataset are welcome! If you would like to contribute to this dataset by providing additional samples or improving the existing dataset, please create an issue in this repository or contact the repository owner for more information.
 
-<!--
 Citation
 --------
 
 If you use the AI-GA dataset in your research or publications, please acknowledge its use by citing this repository.
 
 ```bibtex
-
+@misc{theocharopoulos2023detection,
+      title={Detection of Fake Generated Scientific Abstracts}, 
+      author={Panagiotis C. Theocharopoulos and Panagiotis Anagnostou and Anastasia Tsoukala and Spiros V. Georgakopoulos and Sotiris K. Tasoulis and Vassilis P. Plagianakos},
+      year={2023},
+      eprint={2304.06148},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
--->
 
 Contact Information
 -------------------
 
-For any questions, issues, or feedback regarding the AI-GA dataset or this repository, please contact [insert contact information].
+For any questions, issues, or feedback regarding the AI-GA dataset or this repository, please contact Panagiotis Theocharopoulos [:email:](mailto:ptheochar@uth.gr) and Panagiotis Anagnostou [:email:](mailto:panagno@uth.gr).
