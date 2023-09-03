@@ -80,13 +80,13 @@ Citation
 If you use the AI-GA dataset in your research or publications, please acknowledge its use by citing this repository.
 
 ```bibtex
-@misc{theocharopoulos2023detection,
-      title={Detection of Fake Generated Scientific Abstracts}, 
-      author={Panagiotis C. Theocharopoulos and Panagiotis Anagnostou and Anastasia Tsoukala and Spiros V. Georgakopoulos and Sotiris K. Tasoulis and Vassilis P. Plagianakos},
-      year={2023},
-      eprint={2304.06148},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@INPROCEEDINGS{10233982,
+  author={Theocharopoulos, Panagiotis C. and Anagnostou, Panagiotis and Tsoukala, Anastasia and Georgakopoulos, Spiros V. and Tasoulis, Sotiris K. and Plagianakos, Vassilis P.},
+  booktitle={2023 IEEE Ninth International Conference on Big Data Computing Service and Applications (BigDataService)},
+  title={Detection of Fake Generated Scientific Abstracts}, 
+  year={2023},
+  pages={33-39},
+  doi={10.1109/BigDataService58306.2023.00011}
 }
 ```
 
